@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,input{margin:0;padding:0;}
+body{
+	height:9950px;
+	font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	box-sizing: border-box;
+}
+body,html{margin:0;padding:0;overflow-x: hidden;}
+#wrapper{ /*将所有的页面内容包裹在wrap块中*/  
+	overflow-x:hidden;    /*当该块宽度超过网页宽度时，截断超出的内容，使网页不出现水平滚动条*/
+	width: 100%;
+	min-width: 1200px;
+}
+a{
+	color:#B6B6B6;
+	text-decoration:none;
+}
+a:hover{
+	color:#fff;
+}
+img{
+	vertical-align:middle;
+}   /*设置所有图片的垂直对齐为居中*/
+.m-w{                    /*设置宽度统一为1200px，自动居中的样式*/
+	width:1200px;
+	margin:auto;
+}

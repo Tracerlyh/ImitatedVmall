@@ -1,0 +1,404 @@
+@charset "utf-8";
+#header .h-new
+{     /*通过后代选择器限定各个选择器的作用范围*/
+	position:relative; /*设置相对定位，使其作为子元素h-close关闭按钮定位的参照对象*/
+}
+#header
+{
+	overflow-x: hidden;
+	width:1920px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+#header .h-n-con img
+{  
+ /*设置h-new中的图片采用相对定位+负外边距的方式居中*/
+	position:relative;
+	left:50%;
+	margin-left:-960px;
+}
+#header .h-close
+{
+	position: absolute;  /*绝对定位，参照对象为h-new*/
+	top:10px;         /*垂直方向位于h-new顶边向下10px的位置*/
+    left:50%;          /*水平方向位于h-new中间再加上560px的位置*/
+	margin-left:560px;	          
+	width: 24px;   /*设置关闭按钮宽度*/
+	height: 24px;   /*设置关闭按钮高度*/
+	background: url('../images/header/icon1.png') no-repeat 0px -385px;
+/*设置背景图片，从指定图片文件中获取需要的一部分图片*/
+}
+#h-nav
+{
+	background-color: 	#2E2828;
+	position: relative;
+	height: 37px;
+	font-size:12px;  /*设置文字大小*/
+	line-height: 37px;
+	min-width: 1200px;
+	width: 1920px;
+	z-index: 100;
+	margin: auto;
+}
+.h-n-l
+{
+	width: fit-content;
+	left: 18%;
+	position: relative;
+}
+.afff
+{
+	color: #B6B6B6;
+}
+.afff:hover
+{
+	color:#CA151D;
+}
+.h-n-r
+{
+	width: fit-content;
+	float: right;
+	position: relative;
+	right: 18%;
+}
+.more a:hover
+{
+	color: #CA151D;
+}
+.more
+{
+	box-shadow: 0px 10px 10px #999;
+	text-align: center;
+	font-size: 12px;
+	width: 112px;
+	height: 80px;
+	line-height: 20px;
+	z-index: 200;
+	margin-left: 442px;
+	position: absolute;
+	visibility: hidden;
+	background-color:#fff;
+}
+#kfd
+{
+	top:220px;
+    position: absolute;
+	width: 1920px;
+    margin-left: -960px;
+	left: 50%;
+}
+#kf
+{
+	color: #B6B6B6;
+	font-size: 12px;
+	margin-right: 10px;
+	width: 101px;
+	padding: unset;
+}
+#kf::before
+{
+	display: none;
+}
+#kfm
+{
+	box-shadow: 0px 10px 10px #999;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 13px;
+	text-align: center;
+	left: 18%;
+	margin-left: 871px;
+	top: -94px;
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	line-height: 25px;
+	background-color: #fff;
+	z-index: 999;
+	visibility: hidden;
+}
+#kfm a
+{
+	color: #B6B6B6;
+}
+#kfm a:hover
+{
+	color: #CA151D;
+}
+#wzdh
+{
+	font-size: 12px;
+	box-shadow: 0px 10px 10px #999;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	z-index: 999;
+	position: absolute;
+	left: 18%;
+	margin-left: 282px;
+	width: 800px;
+	top: -94px;
+	height: 200px;
+	background-color: #fff;
+	visibility: hidden;
+}
+.bf
+{
+	font-size: 20px;
+}
+#wzdh a:hover
+{
+	color: #CA151D;
+}
+#wzdh a
+{
+	color: #2E2828;
+}
+#wd
+{
+	color: #B6B6B6;
+	font-size: 12px;
+	margin-right: 10px;
+	width: 101px;
+	padding: unset;
+}
+#wd::before
+{
+	display: none;
+}
+#sjbx
+{
+	padding-top: 10px;
+	font-size: 12px;
+	box-shadow: 0px 10px 10px #999;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	z-index: 1099;
+	position: absolute;
+	left: 18%;
+	margin-left: 918px;
+	width: 240px;
+	top: -94px;
+	height: 390px;
+	background-color: #fff;
+	text-align: center;
+	visibility: hidden;
+}
+#sjbx img
+{
+	width: 220px;
+	height: 370px;
+}
+#sjb
+{
+	background-color: #2E2828;
+	color: #B6B6B6;
+	font-size: 12px;
+}
+#sjb::before
+{
+	display: none;
+}
+.fl:before
+{
+	position:absolute;  /*该插入内容相对于菜单项进行绝对定位*/
+	top:13px;
+	right:5px;
+	content:'';
+	width: 1px;
+	height: 10px;
+	background-color:#999;
+}
+.fl1:before
+{
+	position:absolute;  /*该插入内容相对于菜单项进行绝对定位*/
+	top:13px;
+	right:5px;
+	content:'';
+	width: 1px;
+	height: 10px;
+	background-color:#999;
+}
+.fl1.no-bor1::before
+{
+	display: none;
+}
+
+.fl
+{
+	position: relative;
+	float: left;
+	padding-right: 17px;
+	text-align: center;
+}
+.fl1
+{
+	position: relative;
+	float: left;
+	padding-right: 25px;
+	text-align: center;
+}
+#mo:after
+{
+	display: none;
+}
+#mo
+{
+	position: relative;
+	float: left;
+	padding-left: 7px;
+	padding-right: 25px;
+	text-align: center;	
+	background-color: unset;
+	color: #B6B6B6;
+}
+
+.fr
+{
+	position: relative;
+	text-align: center;
+	float: right;
+	padding-right: 20px;
+}
+.fr:before
+{
+	position:absolute;  /*该插入内容相对于菜单项进行绝对定位*/
+	top:13px;
+	right:5px;
+	content:'';
+	width: 1px;
+	height: 10px;
+	background-color:#999;
+}
+.fr.no-bor::before
+{
+	display: none;
+}
+.a1
+{
+	color: #2E2828;
+}
+.a1:hover
+{
+	color: #CA151D;
+}
+.a2
+{
+	font-size: 12px;
+	color: #999;
+}
+.a2:hover
+{
+	color: #2E2828;
+}
+#More
+{
+	top:126px;
+	width: 1920px;
+	height: 0px;
+	left: 50%;
+	margin-left: -960px;
+	position: absolute;
+	min-width: 1200px;
+}
+#more1
+{
+	width: fit-content;
+	left: 18%;
+	position: relative;
+}
+#h-content
+{
+	background-color: #fff;
+	top:150px;
+	position: absolute;
+	width: 1920px;
+	margin-left: -960px;
+	left: 50%;
+	z-index: 99;
+}
+.aa2
+{
+	margin-top: 0px;
+	position: relative;
+	left: 140px;
+}
+.search-bar
+{   /*设置搜索表单中文本框.search-bar的样式*/
+	position: absolute;
+    width: 300px;     /*设置宽度*/
+	height: 30px;
+	line-height: 30px;
+	top:-5px;
+	overflow-x: hidden;
+	font-size: 15px;
+	color:#999 ;
+	min-width: 300px;
+	padding-left: 15px;
+	padding-right: 50px;
+	left: 40px;
+	border:0px;         /*设置无边框*/
+	background-color: rgb(240, 240, 240);
+	border-radius:15px ;
+	outline:none;      /*设置无轮廓*/
+}
+.search-bar:focus+div
+{
+	display: none;
+}
+.s-submit{  /*搜索表单中提交按钮.s-submit 的样式*/
+	position: absolute;      /*绝对定位，以父元素.search表单为参照对象*/           /*垂直位置位于表单下边线之上6px*/
+	top: -1px;
+	left: 360px;            /*水平位置与表单右对齐*/
+	width: 20px;           /*设置宽度*/
+	height: 20px;           /*设置高度*/
+	border:0;              /*无边框*/
+	outline:none;           /*无轮廓*/
+	background:url('../images/header/icon-header.png') no-repeat 0px -25px; 
+     /*设置背景图片：从指定图片中获取相应部分作为背景*/
+}
+#op:hover
+{
+	opacity:0.8; filter: alpha(opacity=80);
+	filter: grayscale(20%);
+}
+.s-submit:hover
+{
+	opacity:0.2; filter: alpha(opacity=20);
+	filter: grayscale(100%);
+}
+#h-c-con
+{
+	width: fit-content;
+	position: relative;
+	left: 18%;
+}
+#gwcx
+{
+	padding-top: 10px;
+	font-size: 12px;
+	box-shadow: 0px 10px 10px #999;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	z-index: 1099;
+	position: absolute;
+	left: 18%;
+	margin-left: 909px;
+	width: 320px;
+	top: -94px;
+	height: 220px;
+	background-color: #fff;
+	text-align: center;
+	visibility: hidden;
+}
+#gwcx img
+{
+	width: 310px;
+	height: 200px;
+}
+#gwc
+{
+	background-color: #2E2828;
+	color: #B6B6B6;
+	font-size: 12px;
+}
